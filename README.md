@@ -90,7 +90,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.addDocumentsIndexesIndexNameDocumentsPost(body, indexName, opts, callback);
+api.addDocuments(body, indexName, opts, callback);
 ```
 
 ## Documentation for API Endpoints
@@ -99,15 +99,15 @@ All URIs are relative to */*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*Marqo.DefaultApi* | [**addDocumentsIndexesIndexNameDocumentsPost**](docs/DefaultApi.md#addDocumentsIndexesIndexNameDocumentsPost) | **POST** /indexes/{index_name}/documents | Add Documents
-*Marqo.DefaultApi* | [**createIndexIndexesIndexNamePost**](docs/DefaultApi.md#createIndexIndexesIndexNamePost) | **POST** /indexes/{index_name} | Create Index
-*Marqo.DefaultApi* | [**deleteDocsIndexesIndexNameDocumentsDeleteBatchPost**](docs/DefaultApi.md#deleteDocsIndexesIndexNameDocumentsDeleteBatchPost) | **POST** /indexes/{index_name}/documents/delete-batch | Delete Docs
-*Marqo.DefaultApi* | [**deleteIndexIndexesIndexNameDelete**](docs/DefaultApi.md#deleteIndexIndexesIndexNameDelete) | **DELETE** /indexes/{index_name} | Delete Index
-*Marqo.DefaultApi* | [**getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet**](docs/DefaultApi.md#getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet) | **GET** /indexes/{index_name}/documents/{document_id} | Get Document By Id
-*Marqo.DefaultApi* | [**getIndexStatsIndexesIndexNameStatsGet**](docs/DefaultApi.md#getIndexStatsIndexesIndexNameStatsGet) | **GET** /indexes/{index_name}/stats | Get Index Stats
-*Marqo.DefaultApi* | [**refreshIndexIndexesIndexNameRefreshPost**](docs/DefaultApi.md#refreshIndexIndexesIndexNameRefreshPost) | **POST** /indexes/{index_name}/refresh | Refresh Index
+*Marqo.DefaultApi* | [**addDocuments**](docs/DefaultApi.md#addDocuments) | **POST** /indexes/{index_name}/documents | Add Documents
+*Marqo.DefaultApi* | [**createIndex**](docs/DefaultApi.md#createIndex) | **POST** /indexes/{index_name} | Create Index
+*Marqo.DefaultApi* | [**deleteDocuments**](docs/DefaultApi.md#deleteDocuments) | **POST** /indexes/{index_name}/documents/delete-batch | Delete Docs
+*Marqo.DefaultApi* | [**deleteIndex**](docs/DefaultApi.md#deleteIndex) | **DELETE** /indexes/{index_name} | Delete Index
+*Marqo.DefaultApi* | [**getDocument**](docs/DefaultApi.md#getDocument) | **GET** /indexes/{index_name}/documents/{document_id} | Get Document By Id
+*Marqo.DefaultApi* | [**getIndexStats**](docs/DefaultApi.md#getIndexStats) | **GET** /indexes/{index_name}/stats | Get Index Stats
+*Marqo.DefaultApi* | [**refreshIndex**](docs/DefaultApi.md#refreshIndex) | **POST** /indexes/{index_name}/refresh | Refresh Index
 *Marqo.DefaultApi* | [**rootGet**](docs/DefaultApi.md#rootGet) | **GET** / | Root
-*Marqo.DefaultApi* | [**searchIndexesIndexNameSearchPost**](docs/DefaultApi.md#searchIndexesIndexNameSearchPost) | **POST** /indexes/{index_name}/search | Search
+*Marqo.DefaultApi* | [**search**](docs/DefaultApi.md#search) | **POST** /indexes/{index_name}/search | Search
 
 ## Documentation for Models
 

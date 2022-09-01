@@ -34,13 +34,13 @@
 
   describe('(package)', function() {
     describe('DefaultApi', function() {
-      describe('addDocumentsIndexesIndexNameDocumentsPost', function() {
-        it('should call addDocumentsIndexesIndexNameDocumentsPost successfully', function(done) {
-          // TODO: uncomment, update parameter values for addDocumentsIndexesIndexNameDocumentsPost call and complete the assertions
+      describe('addDocuments', function() {
+        it('should call addDocuments successfully', function(done) {
+          // TODO: uncomment, update parameter values for addDocuments call and complete the assertions
           /*
           var opts = {};
 
-          instance.addDocumentsIndexesIndexNameDocumentsPost(body, indexName, opts, function(error, data, response) {
+          instance.addDocuments(body, indexName, opts, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -56,13 +56,13 @@
           done();
         });
       });
-      describe('createIndexIndexesIndexNamePost', function() {
-        it('should call createIndexIndexesIndexNamePost successfully', function(done) {
-          // TODO: uncomment, update parameter values for createIndexIndexesIndexNamePost call and complete the assertions
+      describe('createIndex', function() {
+        it('should call createIndex successfully', function(done) {
+          // TODO: uncomment, update parameter values for createIndex call and complete the assertions
           /*
           var opts = {};
 
-          instance.createIndexIndexesIndexNamePost(indexName, opts, function(error, data, response) {
+          instance.createIndex(indexName, opts, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -78,13 +78,13 @@
           done();
         });
       });
-      describe('deleteDocsIndexesIndexNameDocumentsDeleteBatchPost', function() {
-        it('should call deleteDocsIndexesIndexNameDocumentsDeleteBatchPost successfully', function(done) {
-          // TODO: uncomment, update parameter values for deleteDocsIndexesIndexNameDocumentsDeleteBatchPost call and complete the assertions
+      describe('deleteDocuments', function() {
+        it('should call deleteDocuments successfully', function(done) {
+          // TODO: uncomment, update parameter values for deleteDocuments call and complete the assertions
           /*
           var opts = {};
 
-          instance.deleteDocsIndexesIndexNameDocumentsDeleteBatchPost(body, indexName, opts, function(error, data, response) {
+          instance.deleteDocuments(body, indexName, opts, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -100,12 +100,12 @@
           done();
         });
       });
-      describe('deleteIndexIndexesIndexNameDelete', function() {
-        it('should call deleteIndexIndexesIndexNameDelete successfully', function(done) {
-          // TODO: uncomment, update parameter values for deleteIndexIndexesIndexNameDelete call and complete the assertions
+      describe('deleteIndex', function() {
+        it('should call deleteIndex successfully', function(done) {
+          // TODO: uncomment, update parameter values for deleteIndex call and complete the assertions
           /*
 
-          instance.deleteIndexIndexesIndexNameDelete(indexName, function(error, data, response) {
+          instance.deleteIndex(indexName, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -121,12 +121,12 @@
           done();
         });
       });
-      describe('getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet', function() {
-        it('should call getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet successfully', function(done) {
-          // TODO: uncomment, update parameter values for getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet call and complete the assertions
+      describe('getDocument', function() {
+        it('should call getDocument successfully', function(done) {
+          // TODO: uncomment, update parameter values for getDocument call and complete the assertions
           /*
 
-          instance.getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet(indexName, documentId, function(error, data, response) {
+          instance.getDocument(indexName, documentId, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -142,12 +142,12 @@
           done();
         });
       });
-      describe('getIndexStatsIndexesIndexNameStatsGet', function() {
-        it('should call getIndexStatsIndexesIndexNameStatsGet successfully', function(done) {
-          // TODO: uncomment, update parameter values for getIndexStatsIndexesIndexNameStatsGet call and complete the assertions
+      describe('getIndexStats', function() {
+        it('should call getIndexStats successfully', function(done) {
+          // TODO: uncomment, update parameter values for getIndexStats call and complete the assertions
           /*
 
-          instance.getIndexStatsIndexesIndexNameStatsGet(indexName, function(error, data, response) {
+          instance.getIndexStats(indexName, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -163,12 +163,12 @@
           done();
         });
       });
-      describe('refreshIndexIndexesIndexNameRefreshPost', function() {
-        it('should call refreshIndexIndexesIndexNameRefreshPost successfully', function(done) {
-          // TODO: uncomment, update parameter values for refreshIndexIndexesIndexNameRefreshPost call and complete the assertions
+      describe('refreshIndex', function() {
+        it('should call refreshIndex successfully', function(done) {
+          // TODO: uncomment, update parameter values for refreshIndex call and complete the assertions
           /*
 
-          instance.refreshIndexIndexesIndexNameRefreshPost(indexName, function(error, data, response) {
+          instance.refreshIndex(indexName, function(error, data, response) {
             if (error) {
               done(error);
               return;
@@ -205,12 +205,12 @@
           done();
         });
       });
-      describe('searchIndexesIndexNameSearchPost', function() {
-        it('should call searchIndexesIndexNameSearchPost successfully', function(done) {
-          // TODO: uncomment, update parameter values for searchIndexesIndexNameSearchPost call and complete the assertions
+      describe('search', function() {
+        it('should call search successfully', function(done) {
+          // TODO: uncomment, update parameter values for search call and complete the assertions
           /*
 
-          instance.searchIndexesIndexNameSearchPost(body, indexName, function(error, data, response) {
+          instance.search(body, indexName, function(error, data, response) {
             if (error) {
               done(error);
               return;

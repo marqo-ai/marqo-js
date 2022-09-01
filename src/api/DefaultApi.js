@@ -36,8 +36,8 @@ export class DefaultApi {
     }
 
     /**
-     * Callback function to receive the result of the addDocumentsIndexesIndexNameDocumentsPost operation.
-     * @callback moduleapi/DefaultApi~addDocumentsIndexesIndexNameDocumentsPostCallback
+     * Callback function to receive the result of the addDocuments operation.
+     * @callback moduleapi/DefaultApi~addDocumentsCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -52,19 +52,19 @@ export class DefaultApi {
      * @param {Boolean} opts.refresh  (default to <.>)
      * @param {Number} opts.batchSize  (default to <.>)
      * @param {Number} opts.processes  (default to <.>)
-     * @param {module:api/DefaultApi~addDocumentsIndexesIndexNameDocumentsPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DefaultApi~addDocumentsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    addDocumentsIndexesIndexNameDocumentsPost(body, indexName, opts, callback) {
+    addDocuments(body, indexName, opts, callback) {
       opts = opts || {};
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling addDocumentsIndexesIndexNameDocumentsPost");
+        throw new Error("Missing the required parameter 'body' when calling addDocuments");
       }
       // verify the required parameter 'indexName' is set
       if (indexName === undefined || indexName === null) {
-        throw new Error("Missing the required parameter 'indexName' when calling addDocumentsIndexesIndexNameDocumentsPost");
+        throw new Error("Missing the required parameter 'indexName' when calling addDocuments");
       }
 
       let pathParams = {
@@ -92,8 +92,8 @@ export class DefaultApi {
       );
     }
     /**
-     * Callback function to receive the result of the createIndexIndexesIndexNamePost operation.
-     * @callback moduleapi/DefaultApi~createIndexIndexesIndexNamePostCallback
+     * Callback function to receive the result of the createIndex operation.
+     * @callback moduleapi/DefaultApi~createIndexCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -104,15 +104,15 @@ export class DefaultApi {
      * @param {String} indexName 
      * @param {Object} opts Optional parameters
      * @param {Object} opts.body 
-     * @param {module:api/DefaultApi~createIndexIndexesIndexNamePostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DefaultApi~createIndexCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    createIndexIndexesIndexNamePost(indexName, opts, callback) {
+    createIndex(indexName, opts, callback) {
       opts = opts || {};
       let postBody = opts['body'];
       // verify the required parameter 'indexName' is set
       if (indexName === undefined || indexName === null) {
-        throw new Error("Missing the required parameter 'indexName' when calling createIndexIndexesIndexNamePost");
+        throw new Error("Missing the required parameter 'indexName' when calling createIndex");
       }
 
       let pathParams = {
@@ -140,8 +140,8 @@ export class DefaultApi {
       );
     }
     /**
-     * Callback function to receive the result of the deleteDocsIndexesIndexNameDocumentsDeleteBatchPost operation.
-     * @callback moduleapi/DefaultApi~deleteDocsIndexesIndexNameDocumentsDeleteBatchPostCallback
+     * Callback function to receive the result of the deleteDocuments operation.
+     * @callback moduleapi/DefaultApi~deleteDocumentsCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -153,19 +153,19 @@ export class DefaultApi {
      * @param {String} indexName 
      * @param {Object} opts Optional parameters
      * @param {Boolean} opts.refresh  (default to <.>)
-     * @param {module:api/DefaultApi~deleteDocsIndexesIndexNameDocumentsDeleteBatchPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DefaultApi~deleteDocumentsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    deleteDocsIndexesIndexNameDocumentsDeleteBatchPost(body, indexName, opts, callback) {
+    deleteDocuments(body, indexName, opts, callback) {
       opts = opts || {};
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling deleteDocsIndexesIndexNameDocumentsDeleteBatchPost");
+        throw new Error("Missing the required parameter 'body' when calling deleteDocuments");
       }
       // verify the required parameter 'indexName' is set
       if (indexName === undefined || indexName === null) {
-        throw new Error("Missing the required parameter 'indexName' when calling deleteDocsIndexesIndexNameDocumentsDeleteBatchPost");
+        throw new Error("Missing the required parameter 'indexName' when calling deleteDocuments");
       }
 
       let pathParams = {
@@ -193,8 +193,8 @@ export class DefaultApi {
       );
     }
     /**
-     * Callback function to receive the result of the deleteIndexIndexesIndexNameDelete operation.
-     * @callback moduleapi/DefaultApi~deleteIndexIndexesIndexNameDeleteCallback
+     * Callback function to receive the result of the deleteIndex operation.
+     * @callback moduleapi/DefaultApi~deleteIndexCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -203,15 +203,15 @@ export class DefaultApi {
     /**
      * Delete Index
      * @param {String} indexName 
-     * @param {module:api/DefaultApi~deleteIndexIndexesIndexNameDeleteCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DefaultApi~deleteIndexCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    deleteIndexIndexesIndexNameDelete(indexName, callback) {
+    deleteIndex(indexName, callback) {
       
       let postBody = null;
       // verify the required parameter 'indexName' is set
       if (indexName === undefined || indexName === null) {
-        throw new Error("Missing the required parameter 'indexName' when calling deleteIndexIndexesIndexNameDelete");
+        throw new Error("Missing the required parameter 'indexName' when calling deleteIndex");
       }
 
       let pathParams = {
@@ -239,8 +239,8 @@ export class DefaultApi {
       );
     }
     /**
-     * Callback function to receive the result of the getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet operation.
-     * @callback moduleapi/DefaultApi~getDocumentByIdIndexesIndexNameDocumentsDocumentIdGetCallback
+     * Callback function to receive the result of the getDocument operation.
+     * @callback moduleapi/DefaultApi~getDocumentCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -250,19 +250,19 @@ export class DefaultApi {
      * Get Document By Id
      * @param {String} indexName 
      * @param {String} documentId 
-     * @param {module:api/DefaultApi~getDocumentByIdIndexesIndexNameDocumentsDocumentIdGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DefaultApi~getDocumentCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet(indexName, documentId, callback) {
+    getDocument(indexName, documentId, callback) {
       
       let postBody = null;
       // verify the required parameter 'indexName' is set
       if (indexName === undefined || indexName === null) {
-        throw new Error("Missing the required parameter 'indexName' when calling getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet");
+        throw new Error("Missing the required parameter 'indexName' when calling getDocument");
       }
       // verify the required parameter 'documentId' is set
       if (documentId === undefined || documentId === null) {
-        throw new Error("Missing the required parameter 'documentId' when calling getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet");
+        throw new Error("Missing the required parameter 'documentId' when calling getDocument");
       }
 
       let pathParams = {
@@ -290,8 +290,8 @@ export class DefaultApi {
       );
     }
     /**
-     * Callback function to receive the result of the getIndexStatsIndexesIndexNameStatsGet operation.
-     * @callback moduleapi/DefaultApi~getIndexStatsIndexesIndexNameStatsGetCallback
+     * Callback function to receive the result of the getIndexStats operation.
+     * @callback moduleapi/DefaultApi~getIndexStatsCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -300,15 +300,15 @@ export class DefaultApi {
     /**
      * Get Index Stats
      * @param {String} indexName 
-     * @param {module:api/DefaultApi~getIndexStatsIndexesIndexNameStatsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DefaultApi~getIndexStatsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    getIndexStatsIndexesIndexNameStatsGet(indexName, callback) {
+    getIndexStats(indexName, callback) {
       
       let postBody = null;
       // verify the required parameter 'indexName' is set
       if (indexName === undefined || indexName === null) {
-        throw new Error("Missing the required parameter 'indexName' when calling getIndexStatsIndexesIndexNameStatsGet");
+        throw new Error("Missing the required parameter 'indexName' when calling getIndexStats");
       }
 
       let pathParams = {
@@ -336,8 +336,8 @@ export class DefaultApi {
       );
     }
     /**
-     * Callback function to receive the result of the refreshIndexIndexesIndexNameRefreshPost operation.
-     * @callback moduleapi/DefaultApi~refreshIndexIndexesIndexNameRefreshPostCallback
+     * Callback function to receive the result of the refreshIndex operation.
+     * @callback moduleapi/DefaultApi~refreshIndexCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -346,15 +346,15 @@ export class DefaultApi {
     /**
      * Refresh Index
      * @param {String} indexName 
-     * @param {module:api/DefaultApi~refreshIndexIndexesIndexNameRefreshPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DefaultApi~refreshIndexCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    refreshIndexIndexesIndexNameRefreshPost(indexName, callback) {
+    refreshIndex(indexName, callback) {
       
       let postBody = null;
       // verify the required parameter 'indexName' is set
       if (indexName === undefined || indexName === null) {
-        throw new Error("Missing the required parameter 'indexName' when calling refreshIndexIndexesIndexNameRefreshPost");
+        throw new Error("Missing the required parameter 'indexName' when calling refreshIndex");
       }
 
       let pathParams = {
@@ -423,8 +423,8 @@ export class DefaultApi {
       );
     }
     /**
-     * Callback function to receive the result of the searchIndexesIndexNameSearchPost operation.
-     * @callback moduleapi/DefaultApi~searchIndexesIndexNameSearchPostCallback
+     * Callback function to receive the result of the search operation.
+     * @callback moduleapi/DefaultApi~searchCallback
      * @param {String} error Error message, if any.
      * @param {Object{ data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -434,19 +434,19 @@ export class DefaultApi {
      * Search
      * @param {module:model/SearchQuery} body 
      * @param {String} indexName 
-     * @param {module:api/DefaultApi~searchIndexesIndexNameSearchPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/DefaultApi~searchCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
      */
-    searchIndexesIndexNameSearchPost(body, indexName, callback) {
+    search(body, indexName, callback) {
       
       let postBody = body;
       // verify the required parameter 'body' is set
       if (body === undefined || body === null) {
-        throw new Error("Missing the required parameter 'body' when calling searchIndexesIndexNameSearchPost");
+        throw new Error("Missing the required parameter 'body' when calling search");
       }
       // verify the required parameter 'indexName' is set
       if (indexName === undefined || indexName === null) {
-        throw new Error("Missing the required parameter 'indexName' when calling searchIndexesIndexNameSearchPost");
+        throw new Error("Missing the required parameter 'indexName' when calling search");
       }
 
       let pathParams = {

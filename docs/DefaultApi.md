@@ -4,19 +4,19 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addDocumentsIndexesIndexNameDocumentsPost**](DefaultApi.md#addDocumentsIndexesIndexNameDocumentsPost) | **POST** /indexes/{index_name}/documents | Add Documents
-[**createIndexIndexesIndexNamePost**](DefaultApi.md#createIndexIndexesIndexNamePost) | **POST** /indexes/{index_name} | Create Index
-[**deleteDocsIndexesIndexNameDocumentsDeleteBatchPost**](DefaultApi.md#deleteDocsIndexesIndexNameDocumentsDeleteBatchPost) | **POST** /indexes/{index_name}/documents/delete-batch | Delete Docs
-[**deleteIndexIndexesIndexNameDelete**](DefaultApi.md#deleteIndexIndexesIndexNameDelete) | **DELETE** /indexes/{index_name} | Delete Index
-[**getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet**](DefaultApi.md#getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet) | **GET** /indexes/{index_name}/documents/{document_id} | Get Document By Id
-[**getIndexStatsIndexesIndexNameStatsGet**](DefaultApi.md#getIndexStatsIndexesIndexNameStatsGet) | **GET** /indexes/{index_name}/stats | Get Index Stats
-[**refreshIndexIndexesIndexNameRefreshPost**](DefaultApi.md#refreshIndexIndexesIndexNameRefreshPost) | **POST** /indexes/{index_name}/refresh | Refresh Index
+[**addDocuments**](DefaultApi.md#addDocuments) | **POST** /indexes/{index_name}/documents | Add Documents
+[**createIndex**](DefaultApi.md#createIndex) | **POST** /indexes/{index_name} | Create Index
+[**deleteDocuments**](DefaultApi.md#deleteDocuments) | **POST** /indexes/{index_name}/documents/delete-batch | Delete Docs
+[**deleteIndex**](DefaultApi.md#deleteIndex) | **DELETE** /indexes/{index_name} | Delete Index
+[**getDocument**](DefaultApi.md#getDocument) | **GET** /indexes/{index_name}/documents/{document_id} | Get Document By Id
+[**getIndexStats**](DefaultApi.md#getIndexStats) | **GET** /indexes/{index_name}/stats | Get Index Stats
+[**refreshIndex**](DefaultApi.md#refreshIndex) | **POST** /indexes/{index_name}/refresh | Refresh Index
 [**rootGet**](DefaultApi.md#rootGet) | **GET** / | Root
-[**searchIndexesIndexNameSearchPost**](DefaultApi.md#searchIndexesIndexNameSearchPost) | **POST** /indexes/{index_name}/search | Search
+[**search**](DefaultApi.md#search) | **POST** /indexes/{index_name}/search | Search
 
-<a name="addDocumentsIndexesIndexNameDocumentsPost"></a>
-# **addDocumentsIndexesIndexNameDocumentsPost**
-> Object addDocumentsIndexesIndexNameDocumentsPost(body, indexName, opts)
+<a name="addDocuments"></a>
+# **addDocuments**
+> Object addDocuments(body, indexName, opts)
 
 Add Documents
 
@@ -39,7 +39,7 @@ let opts = {
   'batchSize': 0, // Number | 
   'processes': 1 // Number | 
 };
-apiInstance.addDocumentsIndexesIndexNameDocumentsPost(body, indexName, opts, (error, data, response) => {
+apiInstance.addDocuments(body, indexName, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -71,9 +71,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="createIndexIndexesIndexNamePost"></a>
-# **createIndexIndexesIndexNamePost**
-> Object createIndexIndexesIndexNamePost(indexName, opts)
+<a name="createIndex"></a>
+# **createIndex**
+> Object createIndex(indexName, opts)
 
 Create Index
 
@@ -91,7 +91,7 @@ let indexName = "indexName_example"; // String |
 let opts = { 
   'body': null // Object | 
 };
-apiInstance.createIndexIndexesIndexNamePost(indexName, opts, (error, data, response) => {
+apiInstance.createIndex(indexName, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -120,9 +120,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteDocsIndexesIndexNameDocumentsDeleteBatchPost"></a>
-# **deleteDocsIndexesIndexNameDocumentsDeleteBatchPost**
-> Object deleteDocsIndexesIndexNameDocumentsDeleteBatchPost(body, indexName, opts)
+<a name="deleteDocuments"></a>
+# **deleteDocuments**
+> Object deleteDocuments(body, indexName, opts)
 
 Delete Docs
 
@@ -141,7 +141,7 @@ let indexName = "indexName_example"; // String |
 let opts = { 
   'refresh': true // Boolean | 
 };
-apiInstance.deleteDocsIndexesIndexNameDocumentsDeleteBatchPost(body, indexName, opts, (error, data, response) => {
+apiInstance.deleteDocuments(body, indexName, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -171,9 +171,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="deleteIndexIndexesIndexNameDelete"></a>
-# **deleteIndexIndexesIndexNameDelete**
-> Object deleteIndexIndexesIndexNameDelete(indexName)
+<a name="deleteIndex"></a>
+# **deleteIndex**
+> Object deleteIndex(indexName)
 
 Delete Index
 
@@ -189,7 +189,7 @@ HTTPBasic.password = 'YOUR PASSWORD';
 let apiInstance = new Marqo.DefaultApi();
 let indexName = "indexName_example"; // String | 
 
-apiInstance.deleteIndexIndexesIndexNameDelete(indexName, (error, data, response) => {
+apiInstance.deleteIndex(indexName, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -217,9 +217,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet"></a>
-# **getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet**
-> Object getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet(indexName, documentId)
+<a name="getDocument"></a>
+# **getDocument**
+> Object getDocument(indexName, documentId)
 
 Get Document By Id
 
@@ -236,7 +236,7 @@ let apiInstance = new Marqo.DefaultApi();
 let indexName = "indexName_example"; // String | 
 let documentId = "documentId_example"; // String | 
 
-apiInstance.getDocumentByIdIndexesIndexNameDocumentsDocumentIdGet(indexName, documentId, (error, data, response) => {
+apiInstance.getDocument(indexName, documentId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -265,9 +265,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="getIndexStatsIndexesIndexNameStatsGet"></a>
-# **getIndexStatsIndexesIndexNameStatsGet**
-> Object getIndexStatsIndexesIndexNameStatsGet(indexName)
+<a name="getIndexStats"></a>
+# **getIndexStats**
+> Object getIndexStats(indexName)
 
 Get Index Stats
 
@@ -283,7 +283,7 @@ HTTPBasic.password = 'YOUR PASSWORD';
 let apiInstance = new Marqo.DefaultApi();
 let indexName = "indexName_example"; // String | 
 
-apiInstance.getIndexStatsIndexesIndexNameStatsGet(indexName, (error, data, response) => {
+apiInstance.getIndexStats(indexName, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -311,9 +311,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="refreshIndexIndexesIndexNameRefreshPost"></a>
-# **refreshIndexIndexesIndexNameRefreshPost**
-> Object refreshIndexIndexesIndexNameRefreshPost(indexName)
+<a name="refreshIndex"></a>
+# **refreshIndex**
+> Object refreshIndex(indexName)
 
 Refresh Index
 
@@ -329,7 +329,7 @@ HTTPBasic.password = 'YOUR PASSWORD';
 let apiInstance = new Marqo.DefaultApi();
 let indexName = "indexName_example"; // String | 
 
-apiInstance.refreshIndexIndexesIndexNameRefreshPost(indexName, (error, data, response) => {
+apiInstance.refreshIndex(indexName, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -393,9 +393,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="searchIndexesIndexNameSearchPost"></a>
-# **searchIndexesIndexNameSearchPost**
-> Object searchIndexesIndexNameSearchPost(body, indexName)
+<a name="search"></a>
+# **search**
+> Object search(body, indexName)
 
 Search
 
@@ -412,7 +412,7 @@ let apiInstance = new Marqo.DefaultApi();
 let body = new Marqo.SearchQuery(); // SearchQuery | 
 let indexName = "indexName_example"; // String | 
 
-apiInstance.searchIndexesIndexNameSearchPost(body, indexName, (error, data, response) => {
+apiInstance.search(body, indexName, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
