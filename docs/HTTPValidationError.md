@@ -1,4 +1,4 @@
-# Marqo.HTTPValidationError
+# FastApi.HTTPValidationError
 
 ## Properties
 Name | Type | Description | Notes
