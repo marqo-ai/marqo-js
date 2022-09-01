@@ -41,7 +41,6 @@ export class ApiClient {
          * @type {Array.<String>}
          */
         this.authentications = {
-            'HTTPBasic': {type: 'basic'}
         }
 
         /**

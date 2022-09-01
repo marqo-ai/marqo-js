@@ -80,7 +80,7 @@ export class DefaultApi {
         
       };
 
-      let authNames = ['HTTPBasic'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = Object;
@@ -128,7 +128,7 @@ export class DefaultApi {
         
       };
 
-      let authNames = ['HTTPBasic'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = Object;
@@ -181,7 +181,7 @@ export class DefaultApi {
         
       };
 
-      let authNames = ['HTTPBasic'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = Object;
@@ -227,13 +227,54 @@ export class DefaultApi {
         
       };
 
-      let authNames = ['HTTPBasic'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = Object;
 
       return this.apiClient.callApi(
         '/indexes/{index_name}', 'DELETE',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+    /**
+     * Callback function to receive the result of the getCluster operation.
+     * @callback moduleapi/DefaultApi~getClusterCallback
+     * @param {String} error Error message, if any.
+     * @param {Object{ data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Root
+     * @param {module:api/DefaultApi~getClusterCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
+     */
+    getCluster(callback) {
+      
+      let postBody = null;
+
+      let pathParams = {
+        
+      };
+      let queryParams = {
+        
+      };
+      let headerParams = {
+        
+      };
+      let formParams = {
+        
+      };
+
+      let authNames = [];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = Object;
+
+      return this.apiClient.callApi(
+        '/', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -278,7 +319,7 @@ export class DefaultApi {
         
       };
 
-      let authNames = ['HTTPBasic'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = Object;
@@ -324,7 +365,7 @@ export class DefaultApi {
         
       };
 
-      let authNames = ['HTTPBasic'];
+      let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = Object;
@@ -370,54 +411,13 @@ export class DefaultApi {
         
       };
 
-      let authNames = ['HTTPBasic'];
-      let contentTypes = [];
-      let accepts = ['application/json'];
-      let returnType = Object;
-
-      return this.apiClient.callApi(
-        '/indexes/{index_name}/refresh', 'POST',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, callback
-      );
-    }
-    /**
-     * Callback function to receive the result of the rootGet operation.
-     * @callback moduleapi/DefaultApi~rootGetCallback
-     * @param {String} error Error message, if any.
-     * @param {Object{ data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * Root
-     * @param {module:api/DefaultApi~rootGetCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link <&vendorExtensions.x-jsdoc-type>}
-     */
-    rootGet(callback) {
-      
-      let postBody = null;
-
-      let pathParams = {
-        
-      };
-      let queryParams = {
-        
-      };
-      let headerParams = {
-        
-      };
-      let formParams = {
-        
-      };
-
       let authNames = [];
       let contentTypes = [];
       let accepts = ['application/json'];
       let returnType = Object;
 
       return this.apiClient.callApi(
-        '/', 'GET',
+        '/indexes/{index_name}/refresh', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -462,7 +462,7 @@ export class DefaultApi {
         
       };
 
-      let authNames = ['HTTPBasic'];
+      let authNames = [];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
       let returnType = Object;

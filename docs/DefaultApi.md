@@ -8,10 +8,10 @@ Method | HTTP request | Description
 [**createIndex**](DefaultApi.md#createIndex) | **POST** /indexes/{index_name} | Create Index
 [**deleteDocuments**](DefaultApi.md#deleteDocuments) | **POST** /indexes/{index_name}/documents/delete-batch | Delete Docs
 [**deleteIndex**](DefaultApi.md#deleteIndex) | **DELETE** /indexes/{index_name} | Delete Index
+[**getCluster**](DefaultApi.md#getCluster) | **GET** / | Root
 [**getDocument**](DefaultApi.md#getDocument) | **GET** /indexes/{index_name}/documents/{document_id} | Get Document By Id
 [**getIndexStats**](DefaultApi.md#getIndexStats) | **GET** /indexes/{index_name}/stats | Get Index Stats
 [**refreshIndex**](DefaultApi.md#refreshIndex) | **POST** /indexes/{index_name}/refresh | Refresh Index
-[**rootGet**](DefaultApi.md#rootGet) | **GET** / | Root
 [**search**](DefaultApi.md#search) | **POST** /indexes/{index_name}/search | Search
 
 <a name="addDocuments"></a>
@@ -25,11 +25,6 @@ add_documents endpoint
 ### Example
 ```javascript
 import {Marqo} from 'marqo';
-let defaultClient = Marqo.ApiClient.instance;
-// Configure HTTP basic authorization: HTTPBasic
-let HTTPBasic = defaultClient.authentications['HTTPBasic'];
-HTTPBasic.username = 'YOUR USERNAME';
-HTTPBasic.password = 'YOUR PASSWORD';
 
 let apiInstance = new Marqo.DefaultApi();
 let body = null; // [Object] | 
@@ -64,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[HTTPBasic](../README.md#HTTPBasic)
+No authorization required
 
 ### HTTP request headers
 
@@ -80,11 +75,6 @@ Create Index
 ### Example
 ```javascript
 import {Marqo} from 'marqo';
-let defaultClient = Marqo.ApiClient.instance;
-// Configure HTTP basic authorization: HTTPBasic
-let HTTPBasic = defaultClient.authentications['HTTPBasic'];
-HTTPBasic.username = 'YOUR USERNAME';
-HTTPBasic.password = 'YOUR PASSWORD';
 
 let apiInstance = new Marqo.DefaultApi();
 let indexName = "indexName_example"; // String | 
@@ -113,7 +103,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[HTTPBasic](../README.md#HTTPBasic)
+No authorization required
 
 ### HTTP request headers
 
@@ -129,11 +119,6 @@ Delete Docs
 ### Example
 ```javascript
 import {Marqo} from 'marqo';
-let defaultClient = Marqo.ApiClient.instance;
-// Configure HTTP basic authorization: HTTPBasic
-let HTTPBasic = defaultClient.authentications['HTTPBasic'];
-HTTPBasic.username = 'YOUR USERNAME';
-HTTPBasic.password = 'YOUR PASSWORD';
 
 let apiInstance = new Marqo.DefaultApi();
 let body = ["body_example"]; // [String] | 
@@ -164,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[HTTPBasic](../README.md#HTTPBasic)
+No authorization required
 
 ### HTTP request headers
 
@@ -180,11 +165,6 @@ Delete Index
 ### Example
 ```javascript
 import {Marqo} from 'marqo';
-let defaultClient = Marqo.ApiClient.instance;
-// Configure HTTP basic authorization: HTTPBasic
-let HTTPBasic = defaultClient.authentications['HTTPBasic'];
-HTTPBasic.username = 'YOUR USERNAME';
-HTTPBasic.password = 'YOUR PASSWORD';
 
 let apiInstance = new Marqo.DefaultApi();
 let indexName = "indexName_example"; // String | 
@@ -210,7 +190,43 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[HTTPBasic](../README.md#HTTPBasic)
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getCluster"></a>
+# **getCluster**
+> Object getCluster()
+
+Root
+
+### Example
+```javascript
+import {Marqo} from 'marqo';
+
+let apiInstance = new Marqo.DefaultApi();
+apiInstance.getCluster((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+**Object**
+
+### Authorization
+
+No authorization required
 
 ### HTTP request headers
 
@@ -226,11 +242,6 @@ Get Document By Id
 ### Example
 ```javascript
 import {Marqo} from 'marqo';
-let defaultClient = Marqo.ApiClient.instance;
-// Configure HTTP basic authorization: HTTPBasic
-let HTTPBasic = defaultClient.authentications['HTTPBasic'];
-HTTPBasic.username = 'YOUR USERNAME';
-HTTPBasic.password = 'YOUR PASSWORD';
 
 let apiInstance = new Marqo.DefaultApi();
 let indexName = "indexName_example"; // String | 
@@ -258,7 +269,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[HTTPBasic](../README.md#HTTPBasic)
+No authorization required
 
 ### HTTP request headers
 
@@ -274,11 +285,6 @@ Get Index Stats
 ### Example
 ```javascript
 import {Marqo} from 'marqo';
-let defaultClient = Marqo.ApiClient.instance;
-// Configure HTTP basic authorization: HTTPBasic
-let HTTPBasic = defaultClient.authentications['HTTPBasic'];
-HTTPBasic.username = 'YOUR USERNAME';
-HTTPBasic.password = 'YOUR PASSWORD';
 
 let apiInstance = new Marqo.DefaultApi();
 let indexName = "indexName_example"; // String | 
@@ -304,7 +310,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[HTTPBasic](../README.md#HTTPBasic)
+No authorization required
 
 ### HTTP request headers
 
@@ -320,11 +326,6 @@ Refresh Index
 ### Example
 ```javascript
 import {Marqo} from 'marqo';
-let defaultClient = Marqo.ApiClient.instance;
-// Configure HTTP basic authorization: HTTPBasic
-let HTTPBasic = defaultClient.authentications['HTTPBasic'];
-HTTPBasic.username = 'YOUR USERNAME';
-HTTPBasic.password = 'YOUR PASSWORD';
 
 let apiInstance = new Marqo.DefaultApi();
 let indexName = "indexName_example"; // String | 
@@ -350,42 +351,6 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[HTTPBasic](../README.md#HTTPBasic)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-<a name="rootGet"></a>
-# **rootGet**
-> Object rootGet()
-
-Root
-
-### Example
-```javascript
-import {Marqo} from 'marqo';
-
-let apiInstance = new Marqo.DefaultApi();
-apiInstance.rootGet((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-**Object**
-
-### Authorization
-
 No authorization required
 
 ### HTTP request headers
@@ -402,11 +367,6 @@ Search
 ### Example
 ```javascript
 import {Marqo} from 'marqo';
-let defaultClient = Marqo.ApiClient.instance;
-// Configure HTTP basic authorization: HTTPBasic
-let HTTPBasic = defaultClient.authentications['HTTPBasic'];
-HTTPBasic.username = 'YOUR USERNAME';
-HTTPBasic.password = 'YOUR PASSWORD';
 
 let apiInstance = new Marqo.DefaultApi();
 let body = new Marqo.SearchQuery(); // SearchQuery | 
@@ -434,7 +394,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[HTTPBasic](../README.md#HTTPBasic)
+No authorization required
 
 ### HTTP request headers
 

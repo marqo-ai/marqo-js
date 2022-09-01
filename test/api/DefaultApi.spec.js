@@ -121,6 +121,27 @@
           done();
         });
       });
+      describe('getCluster', function() {
+        it('should call getCluster successfully', function(done) {
+          // TODO: uncomment getCluster call and complete the assertions
+          /*
+
+          instance.getCluster(function(error, data, response) {
+            if (error) {
+              done(error);
+              return;
+            }
+            // TODO: update response assertions
+            expect(data).to.be.a(Object);
+            // expect(data).to.be(null);
+
+            done();
+          });
+          */
+          // TODO: uncomment and complete method invocation above, then delete this line and the next:
+          done();
+        });
+      });
       describe('getDocument', function() {
         it('should call getDocument successfully', function(done) {
           // TODO: uncomment, update parameter values for getDocument call and complete the assertions
@@ -169,27 +190,6 @@
           /*
 
           instance.refreshIndex(indexName, function(error, data, response) {
-            if (error) {
-              done(error);
-              return;
-            }
-            // TODO: update response assertions
-            expect(data).to.be.a(Object);
-            // expect(data).to.be(null);
-
-            done();
-          });
-          */
-          // TODO: uncomment and complete method invocation above, then delete this line and the next:
-          done();
-        });
-      });
-      describe('rootGet', function() {
-        it('should call rootGet successfully', function(done) {
-          // TODO: uncomment rootGet call and complete the assertions
-          /*
-
-          instance.rootGet(function(error, data, response) {
             if (error) {
               done(error);
               return;

@@ -69,11 +69,6 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 ```javascript
 var Marqo = require('marqo');
-var defaultClient = Marqo.ApiClient.instance;
-// Configure HTTP basic authorization: HTTPBasic
-var HTTPBasic = defaultClient.authentications['HTTPBasic'];
-HTTPBasic.username = 'YOUR USERNAME'
-HTTPBasic.password = 'YOUR PASSWORD'
 
 var api = new Marqo.DefaultApi()
 var body = null; // {[Object]} 
@@ -103,10 +98,10 @@ Class | Method | HTTP request | Description
 *Marqo.DefaultApi* | [**createIndex**](docs/DefaultApi.md#createIndex) | **POST** /indexes/{index_name} | Create Index
 *Marqo.DefaultApi* | [**deleteDocuments**](docs/DefaultApi.md#deleteDocuments) | **POST** /indexes/{index_name}/documents/delete-batch | Delete Docs
 *Marqo.DefaultApi* | [**deleteIndex**](docs/DefaultApi.md#deleteIndex) | **DELETE** /indexes/{index_name} | Delete Index
+*Marqo.DefaultApi* | [**getCluster**](docs/DefaultApi.md#getCluster) | **GET** / | Root
 *Marqo.DefaultApi* | [**getDocument**](docs/DefaultApi.md#getDocument) | **GET** /indexes/{index_name}/documents/{document_id} | Get Document By Id
 *Marqo.DefaultApi* | [**getIndexStats**](docs/DefaultApi.md#getIndexStats) | **GET** /indexes/{index_name}/stats | Get Index Stats
 *Marqo.DefaultApi* | [**refreshIndex**](docs/DefaultApi.md#refreshIndex) | **POST** /indexes/{index_name}/refresh | Refresh Index
-*Marqo.DefaultApi* | [**rootGet**](docs/DefaultApi.md#rootGet) | **GET** / | Root
 *Marqo.DefaultApi* | [**search**](docs/DefaultApi.md#search) | **POST** /indexes/{index_name}/search | Search
 
 ## Documentation for Models
@@ -118,8 +113,5 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Authorization
 
-
-### HTTPBasic
-
-- **Type**: HTTP basic authentication
+ All endpoints do not require authorization.
 
