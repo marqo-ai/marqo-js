@@ -1,4 +1,4 @@
-# FastApi.ValidationError
+# Marqo.ValidationError
 
 ## Properties
 Name | Type | Description | Notes

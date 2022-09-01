@@ -1,4 +1,4 @@
-# FastApi.DefaultApi
+# Marqo.DefaultApi
 
 All URIs are relative to */*
 
@@ -24,14 +24,14 @@ add_documents endpoint
 
 ### Example
 ```javascript
-import {FastApi} from 'fast_api';
-let defaultClient = FastApi.ApiClient.instance;
+import {Marqo} from 'marqo';
+let defaultClient = Marqo.ApiClient.instance;
 // Configure HTTP basic authorization: HTTPBasic
 let HTTPBasic = defaultClient.authentications['HTTPBasic'];
 HTTPBasic.username = 'YOUR USERNAME';
 HTTPBasic.password = 'YOUR PASSWORD';
 
-let apiInstance = new FastApi.DefaultApi();
+let apiInstance = new Marqo.DefaultApi();
 let body = null; // [Object] | 
 let indexName = "indexName_example"; // String | 
 let opts = { 
@@ -79,14 +79,14 @@ Create Index
 
 ### Example
 ```javascript
-import {FastApi} from 'fast_api';
-let defaultClient = FastApi.ApiClient.instance;
+import {Marqo} from 'marqo';
+let defaultClient = Marqo.ApiClient.instance;
 // Configure HTTP basic authorization: HTTPBasic
 let HTTPBasic = defaultClient.authentications['HTTPBasic'];
 HTTPBasic.username = 'YOUR USERNAME';
 HTTPBasic.password = 'YOUR PASSWORD';
 
-let apiInstance = new FastApi.DefaultApi();
+let apiInstance = new Marqo.DefaultApi();
 let indexName = "indexName_example"; // String | 
 let opts = { 
   'body': null // Object | 
@@ -128,14 +128,14 @@ Delete Docs
 
 ### Example
 ```javascript
-import {FastApi} from 'fast_api';
-let defaultClient = FastApi.ApiClient.instance;
+import {Marqo} from 'marqo';
+let defaultClient = Marqo.ApiClient.instance;
 // Configure HTTP basic authorization: HTTPBasic
 let HTTPBasic = defaultClient.authentications['HTTPBasic'];
 HTTPBasic.username = 'YOUR USERNAME';
 HTTPBasic.password = 'YOUR PASSWORD';
 
-let apiInstance = new FastApi.DefaultApi();
+let apiInstance = new Marqo.DefaultApi();
 let body = ["body_example"]; // [String] | 
 let indexName = "indexName_example"; // String | 
 let opts = { 
@@ -179,14 +179,14 @@ Delete Index
 
 ### Example
 ```javascript
-import {FastApi} from 'fast_api';
-let defaultClient = FastApi.ApiClient.instance;
+import {Marqo} from 'marqo';
+let defaultClient = Marqo.ApiClient.instance;
 // Configure HTTP basic authorization: HTTPBasic
 let HTTPBasic = defaultClient.authentications['HTTPBasic'];
 HTTPBasic.username = 'YOUR USERNAME';
 HTTPBasic.password = 'YOUR PASSWORD';
 
-let apiInstance = new FastApi.DefaultApi();
+let apiInstance = new Marqo.DefaultApi();
 let indexName = "indexName_example"; // String | 
 
 apiInstance.deleteIndexIndexesIndexNameDelete(indexName, (error, data, response) => {
@@ -225,14 +225,14 @@ Get Document By Id
 
 ### Example
 ```javascript
-import {FastApi} from 'fast_api';
-let defaultClient = FastApi.ApiClient.instance;
+import {Marqo} from 'marqo';
+let defaultClient = Marqo.ApiClient.instance;
 // Configure HTTP basic authorization: HTTPBasic
 let HTTPBasic = defaultClient.authentications['HTTPBasic'];
 HTTPBasic.username = 'YOUR USERNAME';
 HTTPBasic.password = 'YOUR PASSWORD';
 
-let apiInstance = new FastApi.DefaultApi();
+let apiInstance = new Marqo.DefaultApi();
 let indexName = "indexName_example"; // String | 
 let documentId = "documentId_example"; // String | 
 
@@ -273,14 +273,14 @@ Get Index Stats
 
 ### Example
 ```javascript
-import {FastApi} from 'fast_api';
-let defaultClient = FastApi.ApiClient.instance;
+import {Marqo} from 'marqo';
+let defaultClient = Marqo.ApiClient.instance;
 // Configure HTTP basic authorization: HTTPBasic
 let HTTPBasic = defaultClient.authentications['HTTPBasic'];
 HTTPBasic.username = 'YOUR USERNAME';
 HTTPBasic.password = 'YOUR PASSWORD';
 
-let apiInstance = new FastApi.DefaultApi();
+let apiInstance = new Marqo.DefaultApi();
 let indexName = "indexName_example"; // String | 
 
 apiInstance.getIndexStatsIndexesIndexNameStatsGet(indexName, (error, data, response) => {
@@ -319,14 +319,14 @@ Refresh Index
 
 ### Example
 ```javascript
-import {FastApi} from 'fast_api';
-let defaultClient = FastApi.ApiClient.instance;
+import {Marqo} from 'marqo';
+let defaultClient = Marqo.ApiClient.instance;
 // Configure HTTP basic authorization: HTTPBasic
 let HTTPBasic = defaultClient.authentications['HTTPBasic'];
 HTTPBasic.username = 'YOUR USERNAME';
 HTTPBasic.password = 'YOUR PASSWORD';
 
-let apiInstance = new FastApi.DefaultApi();
+let apiInstance = new Marqo.DefaultApi();
 let indexName = "indexName_example"; // String | 
 
 apiInstance.refreshIndexIndexesIndexNameRefreshPost(indexName, (error, data, response) => {
@@ -365,9 +365,9 @@ Root
 
 ### Example
 ```javascript
-import {FastApi} from 'fast_api';
+import {Marqo} from 'marqo';
 
-let apiInstance = new FastApi.DefaultApi();
+let apiInstance = new Marqo.DefaultApi();
 apiInstance.rootGet((error, data, response) => {
   if (error) {
     console.error(error);
@@ -401,15 +401,15 @@ Search
 
 ### Example
 ```javascript
-import {FastApi} from 'fast_api';
-let defaultClient = FastApi.ApiClient.instance;
+import {Marqo} from 'marqo';
+let defaultClient = Marqo.ApiClient.instance;
 // Configure HTTP basic authorization: HTTPBasic
 let HTTPBasic = defaultClient.authentications['HTTPBasic'];
 HTTPBasic.username = 'YOUR USERNAME';
 HTTPBasic.password = 'YOUR PASSWORD';
 
-let apiInstance = new FastApi.DefaultApi();
-let body = new FastApi.SearchQuery(); // SearchQuery | 
+let apiInstance = new Marqo.DefaultApi();
+let body = new Marqo.SearchQuery(); // SearchQuery | 
 let indexName = "indexName_example"; // String | 
 
 apiInstance.searchIndexesIndexNameSearchPost(body, indexName, (error, data, response) => {

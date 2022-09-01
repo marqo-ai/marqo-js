@@ -1,4 +1,4 @@
-# FastApi.SearchQuery
+# Marqo.SearchQuery
 
 ## Properties
 Name | Type | Description | Notes
